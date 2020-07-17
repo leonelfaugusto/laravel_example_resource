@@ -18,3 +18,6 @@ Route::get('/', function() {
 });
 
 Route::resource('alunos', 'Alunos');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
