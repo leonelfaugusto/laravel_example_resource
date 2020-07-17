@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class Alunos extends Controller
 {
+
+    public function __construct() {
+        $this->middleware('log');
+    }
+
     /**
      * Display a listing of the resource.
      *
